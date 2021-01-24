@@ -18,7 +18,9 @@ validate :name, numericality: true
 ```
 
 For running examples execute:
-* bundle install 
-* rspec
+```
+bundle install
+rspec
+```
 
 
