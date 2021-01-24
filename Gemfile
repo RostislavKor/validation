@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
+gem 'factory_bot'
+gem 'faker'
 gem 'rspec'
 gem 'rubocop'
-gem 'faker'
-gem 'factory_bot'

@@ -27,12 +27,11 @@ module Validation
 
     def validate(attribute_name, validation_condition)
       validation_condition.each do |k, value|
-        validator = Object.const_get("Validations::#{(k.to_s).camelize}Validator")
+        validator = Object.const_get("Validations::#{k.to_s.camelize}Validator")
 
         added_validations << validator.new(attribute_name, value)
       end
     end
-
   end
 end
 

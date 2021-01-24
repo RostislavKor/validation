@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 FactoryBot.define do
   factory  :post_code do
     code { Faker::Address.zip_code }
